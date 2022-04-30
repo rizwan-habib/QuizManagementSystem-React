@@ -1,6 +1,6 @@
 import { useHistory } from "react-router";
-import NavHostelMain from "./NavHostelMain";
-import HeaderHostelMain from "./headerHostelMain";
+import NavStudentMain from "./NavStudentMain";
+import HeaderStudentMain from "./headerStudentMain";
 import {useLocation} from 'react-router-dom';
 
 function HostelMain() {
@@ -16,11 +16,10 @@ function HostelMain() {
 
     return (  
             <div>
-              {/* {location.state.data.username} */}
-              {/* {console.log(location)} */}
+              
                <header class="header-blue">
-                <NavHostelMain  state = {location.state}  />
-                <HeaderHostelMain/>
+                <NavStudentMain  state = {location.state}  />
+                <HeaderStudentMain/>
                 </header>     
             </div>
         

@@ -1,6 +1,6 @@
 import { useHistory } from "react-router";
 import './css/Contact-Form-Clean.css'
-import NavHostelMain from "./NavHostelMain";
+import NavStudentMain from "./NavStudentMain";
 import { useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
@@ -75,7 +75,7 @@ function DelHostel() {
 
     return (
        <div>
-           <NavHostelMain/>
+           <NavStudentMain/>
            <section class="contact-clean">
                 <form onSubmit={handleSubmit}>
                 <div class="mb-3" >

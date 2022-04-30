@@ -1,6 +1,6 @@
 import { useHistory } from "react-router";
 import './css/Contact-Form-Clean.css'
-import NavHostelMain from "./NavHostelMain";
+import NavStudentMain from "./NavStudentMain";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
@@ -83,7 +83,7 @@ function RequestMessages() {
 
     return (
        <div>
-           <NavHostelMain/>
+           <NavStudentMain/>
            <div class="container">
                
                {/* {} */}

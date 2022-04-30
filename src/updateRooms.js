@@ -1,6 +1,6 @@
 import { useHistory } from "react-router";
 import './css/Contact-Form-Clean.css'
-import NavHostelMain from "./NavHostelMain";
+import NavHostelMain from "./NavStudentMain";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 function UpRoomsOrDelHostel() {

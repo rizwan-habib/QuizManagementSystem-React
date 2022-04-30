@@ -6,7 +6,7 @@ import './fonts/fontawesome-webfont.ttf'
 import './fonts/fontawesome-webfont.woff'
 import './fonts/fontawesome-webfont.woff2'
 import './fonts/FontAwesome.otf'
-import screenContent from './img/hostel.jpg'
+import screenContent from './img/quiz.jpg'
 function Header() {
     return (
         // <header class="header-blue">
@@ -16,8 +16,9 @@ function Header() {
                     
                         <h1>Welcome Back!</h1>
                         <p> 
-                            Our Hostel management system is designed to suggest the best hostels in town
-                            to its users based on their ratings and customer's experience.    
+                            Our Quiz management system is designed to create and take Quiz.
+                            It will also check provide evaluation sheet to teacher and notify 
+                            teacher if any student try to cheat.    
                         </p>
                         
                         <a href='#myfooter' class="btn btn-light btn-lg action-button" type="button ">Learn More</a>

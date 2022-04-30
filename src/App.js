@@ -1,19 +1,22 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, { useEffect } from 'react'
 import WelcomePage from './welcome';
 import LoginPage from './login';
 import SetupProfilePage from './setupProfile';
-import RegisterHostelPage from './registerHostel';
-import SearchAndResultPage from "./searchAndResults";
+import RegisterTeacherPage from './registerTeacher';
+import CreateQuiz from "./CreateQuiz";
 import RoomsAndBeds from './roomsAndBeds';
 import UpdateRooms from './updateRooms';
-import AddRoomDetails from './AddRoomDetails';
+import TakeQuiz from './TakeQuiz';
 import DelHostel from './deleteHostel';
 import HostelMain from './hostelMain';
 import RequestMessages from './requestMessages';
 
 
 function App() {
-
+  useEffect(() => {
+    document.title = "Quiz Management System"
+  }, [])
 
 
   return (
@@ -26,11 +29,11 @@ function App() {
           <Route path="/setupProfile">
             <SetupProfilePage/>
           </Route>
-          <Route path="/registerHostel">
-            <RegisterHostelPage/>
+          <Route path="/registerTeacher">
+            <RegisterTeacherPage/>
           </Route>
-          <Route path="/SearchAndResults">
-            <SearchAndResultPage/>
+          <Route path="/CreateQuiz">
+            <CreateQuiz/>
           </Route> 
           <Route path="/roomsAndBeds">
             <RoomsAndBeds/>
@@ -38,8 +41,8 @@ function App() {
           <Route path= "/updateRooms">
             <UpdateRooms/>
           </Route> 
-          <Route path= "/AddRoomDetails">
-            <AddRoomDetails/>
+          <Route path= "/TakeQuiz">
+            <TakeQuiz/>
           </Route>
           <Route path= "/deleteHostel">
             <DelHostel/>

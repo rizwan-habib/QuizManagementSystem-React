@@ -10,7 +10,7 @@ import screenContent from './img/hostelMain.jpg'
 import UserProfile from './userProfile';
 import HostelProfile from './hostelProfile'
 
-function HeaderHostelMain() {
+function HeaderStudentMain() {
 
     /////
     // let name = UserProfile.getName();
@@ -22,10 +22,9 @@ function HeaderHostelMain() {
             <div class="container hero">
                 <div class="row">
                     <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-                        <h1>Welcome Back Owner!</h1>
+                        <h1>Welcome Back Student!</h1>
                         <p> 
-                            Our Hostel management system is designed to manage all the functionalities that you dreamed.You
-                            can now add hostel details , update rooms and can see request messages from users.    
+                            Our Quiz system is designed to manage all the functionalities that you dreamed.    
                         </p>
                         
                     </div>
@@ -41,4 +40,4 @@ function HeaderHostelMain() {
     );
   }
   
-  export default HeaderHostelMain;
+  export default HeaderStudentMain;

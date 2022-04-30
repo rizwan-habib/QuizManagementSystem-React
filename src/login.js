@@ -39,19 +39,18 @@ function LoginPage() {
 
     axios.post(`http://localhost:8001/login`,user)
     .then(res => {
-        
         result = res.data;
         setData(result);
-        if(result.type==="resident")
+        if(result.type==="teacher")
         {
           history.push(
             {
-              pathname:"/SearchAndResults",
+              pathname:"/CreateQuiz",
               state: { username: userName, data : result} 
             }  
           );
         }
-        else if(result.type=="hostel")
+        else if(result.type=="student")
         {
           history.push(
             {
@@ -65,21 +64,7 @@ function LoginPage() {
           console.log("error");
         }
 
-        // result = res.data;
-        // setData(result);
-        // if(result)
-        // {
-        //   history.push(
-        //     {
-        //       pathname:"/hostelMain",
-        //       state: { username: userName, data : result } 
-        //     }  
-        //   );
-        // }
-        // else{
-        //   alert("Not Found");
-        //   console.log("error");
-        // }
+        
 
 
 

@@ -39,9 +39,9 @@ function SetupProfilePage() {
     e.preventDefault();
 
     const user = {
-      "name":Name,
       "username": userName,
       "password": password,
+      "name":Name,
       "cnic": cnic
     };
     
